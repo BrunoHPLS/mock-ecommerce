@@ -1,0 +1,166 @@
+body{
+    font-family: system-ui,-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.cabecalho{
+    background-color: #0060B1;
+}
+.navbar{
+    font-size: 1.5rem;
+    width: 85%;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    padding: 40px 0px;
+}
+
+.navbar a{
+    transition: 0.3s;
+}
+
+.navbar a:hover{
+    transition: 0.3s;
+    transform: scale(1.1);
+}
+
+.navbar__logo{
+    color: #FFFFFF;
+    font-size: 3rem;
+    font-weight: 700;
+    letter-spacing: 4px;
+}
+
+.navbar__busca{
+    width: 35%;
+    display: flex;
+}
+
+.busca__input{
+    outline: none;
+    box-decoration-break: unset;
+    font-size: 1rem;
+    padding: 5px 0px 5px 20px;
+    width: 90%;
+    border-radius: 10px 0px 0px 10px;
+}
+
+.busca__button{
+    cursor: pointer;
+    color: black;
+    background-color: #CCDFEF;
+    padding: 5px;
+    border-radius: 0px 10px 10px 0px;
+}
+
+.navbar__user{
+    color: #CCDFEF;
+    width: 15%;
+    display: flex;
+    align-items: center;
+    font-size: 1rem;
+}
+
+.navbar__user i{
+    font-size: 1.3rem;
+    border: 2px solid #347BBE;
+    padding: 5px 7px;
+    border-radius: 20px;
+}
+
+.navbar__user a{
+    font-weight: 700;
+}
+
+.navbar__user a:hover{
+    text-decoration: underline;
+}
+
+.navbar__util{
+    font-size: 1.7rem;
+    width: 15%;
+    display: flex;
+    color: #CCDFEF;
+    justify-content: space-between;
+}
+
+.navbar--menu{
+    background-color: #FF6500;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    font-size: 1.2rem;
+    font-weight: 700;
+    line-height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 8px 7.5% 10px 7.5%;
+}
+
+.departamentos__btn{
+    width: 300px;
+    background-color: #FF5101;
+    padding: 5px;
+    border: 2px dashed #ac3701;
+    border-radius: 10px 10px 0px 0px;
+}
+
+.departamentos__btn i{
+    font-size: 1.1rem;
+    transition: 0.3s;
+}
+
+.mouseover__chevron{
+    transition: 0.3s;
+    transform: rotate(-180deg);
+}
+/*Peguei na internet esse negócio de mudar a cor desse jeito no hover*/
+.menu__link{
+    overflow: hidden;
+    background: linear-gradient(to right, #347BBE, #2914e9 50%, #FFFFFF 50%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-size: 200% 100%;
+    background-position: 100%;
+    transition: background-position 200ms ease;
+}
+
+.menu__link:hover{
+    background-position: 0 100%;
+}
+
+.departamentos__list{
+    position: absolute;
+    display: none;
+    transition: 0.2s;
+}
+
+.departamentos__list--active{
+    color: #252525;
+    background-color: #e9e9e9;
+    font-size: 1.3rem;
+    font-weight: 500;
+    padding: 10px 0px;
+    position: absolute;
+    top: 175px;
+    flex: 1 1 300px;
+    width: 300px;
+    height: 240px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    transition: 0.2s;
+}
+
+.departamento{
+    line-height: 2rem;
+    width: 100%;
+    width: auto;
+    padding-left: 15px;
+}
+
+.departamento:hover{
+    transition: 0.1s;
+    border-left: 6px solid #FF5101;
+}
