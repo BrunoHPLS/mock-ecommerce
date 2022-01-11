@@ -158,6 +158,8 @@ body{
     width: 100%;
     width: auto;
     padding-left: 15px;
+    transition: 0.1s;
+    border-left: 0px solid #FF5101;
 }
 
 .departamento:hover{
