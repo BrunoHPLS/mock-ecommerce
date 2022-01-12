@@ -1,0 +1,154 @@
+.principal{
+    margin: 50px 4%;
+    background-color: #FFFFFF;
+}
+
+.principal__titulo--destaque{
+    padding: 15px 3.5%;
+    color: #FFFFFF;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 2.2rem;
+    text-align: center;
+    background-color: #FF6500;
+}
+
+.principal__destaque{
+    padding: 25px 3.5%;
+    display: grid;
+    grid-template-areas:
+    "destaque destaque" 
+    "destaque destaque" 
+    "propaganda1 propaganda2";
+    gap: 40px;
+}
+
+.destaque__carousel, .destaque__propaganda{
+    background-color: #CCDFEF;
+    min-width: 40%;
+    min-height: 200px;
+    box-sizing: border-box;
+}
+
+.propaganda1{
+    grid-area: propaganda1;
+    background-image: url(../img/PropagandaKabum1.jpg);
+}   
+
+.propaganda2{
+    grid-area: propaganda2;
+    background-image: url(../img/PropagandaKabum2.jpg);
+}
+
+.destaque__carousel{
+    width: 100%;
+    grid-area: destaque;
+    overflow: hidden;
+    display: flex;
+    padding: 10px;
+    gap: 20px;
+}
+
+.carousel--button{
+    position: absolute;
+    z-index: 3;
+    top: 520px;
+    padding: 5px;
+    cursor: pointer;
+    font-size: 2.5rem;
+    border: 2px solid #9e9e9eaf;
+    border-radius: 50px;
+    transition: 0.5s;
+}
+
+.button--left{
+    display: none;
+    left: 7%;
+}
+
+.button--right{
+    display: initial;
+    right: 7%;
+}
+
+.carousel--button:hover{
+    transition: 0.5s;
+    background-color: #d3d3d3af;
+}
+
+.destaque__carousel--item{
+    box-sizing: border-box;
+    position: relative;
+    z-index: 0;
+    display: flex;
+    flex-direction: column;
+    min-width: 18.5%;
+    min-height: 440px;
+    justify-content: space-between;
+    background-color: #fff;
+    border-radius: 15px;
+    right: 0%;
+    transition: 0.3s;
+}
+
+.destaque__carousel--item:hover{
+    transform: translate(-2px,-2px);
+    box-shadow: 4px 4px 4px #b3b3b3;
+}
+
+.destaque__carousel--item:active{
+    transform: translate(0px,0px);
+    box-shadow: 0px 0px 0px #b3b3b3;
+}
+
+.item__favbtn{
+    cursor: pointer;
+    margin: 10px 15px;
+    font-size: 2rem;
+    color: #b3b3b3;
+    align-self: flex-end;
+    transition: 0.2s;
+}
+
+.item__favbtn:hover{
+    transition: 0.5s;
+    color: red;
+}
+
+.fas.fa-heart{
+    color: red;
+}
+
+.item__img{
+    width: 90%;
+    margin: 0px auto;
+    text-align: center;
+}
+
+.item__desc{
+    overflow: hidden;
+    text-overflow: ellipsis;
+    font-size: 1rem;
+    font-weight: 500;
+    padding: 0px 10px;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+}
+
+.item__preco{
+    cursor: auto;
+    font-size: 1.7rem;
+    font-weight: 700;
+    color: #FF6500;
+    text-align: center;
+}
+
+.item__comprabtn{
+    cursor: pointer;
+    color: #FFFFFF;
+    font-size: 1.5rem;
+    padding: 5px 0px;
+    border-radius: 0px 0px 15px 15px;
+    background-color: #FF6500;
+}
