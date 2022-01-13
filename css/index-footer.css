@@ -1,0 +1,132 @@
+.rodape{
+    background-color: #0255b4;
+    color: #FFFFFF;
+}
+
+.rodape__newsletter{
+    background-color: #013a7c;
+    padding: 20px 7.5%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 30px;
+}
+
+.newsletter--title{
+    display: flex;
+    flex-direction: column;
+}
+
+.newsletter--title h2{
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+
+.newsletter--form{
+    outline: none;
+    color: black;
+    font-size: 1.3rem;
+    padding: 12px;
+    border-radius: 10px;
+    width: 25%;
+}
+
+.newsletter--submit{
+    width: 20%;
+    cursor: pointer;
+    background-color: #f06000;
+    font-size: 1.5rem;
+    font-weight: 700;
+    padding: 10px;
+    border: 4px solid #973c00;
+    border-radius: 10px;
+    transition: 0.3s;
+}
+
+.newsletter--submit:hover{
+    transition: 0.3s;
+    transform: translate(-2px,-2px);
+    box-shadow: 2px 2px 1px #bb4b00;
+}
+
+.newsletter--submit:active{
+    transition: 0.3s;
+    transform: translate(2px,2px);
+    box-shadow: none;
+}
+
+.rodape__informacoes{
+    padding: 35px 7.5%;
+    max-height: 400px;
+    display: grid;
+    grid-template-areas: 
+    "departamento promocoes institucional conta atendimento" 
+    "departamento promocoes institucional midias aplicativo";
+}
+
+.informacoes{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.informacoes h3{
+    font-size: 1.1rem;
+    font-weight: 700;
+}
+
+.informacoes--links{
+    font-size: 0.9rem;
+    max-height: 400px;
+    display: flex;
+    flex-flow: column wrap;
+    gap: 7px;
+}
+
+.informacoes--departamentos{
+    grid-area: departamento;
+}
+.informacoes--promocoes{
+    grid-area: promocoes;
+}
+.informacoes--institucional{
+    grid-area: institucional;
+}
+.informacoes--conta{
+    grid-area: conta;
+}
+.informacoes--midias{
+    grid-area: midias;
+}
+.informacoes--atendimento{
+    grid-area: atendimento;
+}
+.informacoes--aplicativo{
+    grid-area: aplicativo;
+}
+
+.midias-sociais{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    font-size: 1.5rem;
+    gap: 20px;
+}
+
+.informacoes--aplicativo a{
+    font-size: 1.2rem;
+}
+
+.informacoes--aplicativo i{
+    font-size: 1.5rem;
+}
+
+.informacoes--atendimento p{
+    width: 200px;
+}
+
+.copyright{
+    padding: 10px 7.5%;
+    text-align: center;
+    background-color: #013a7c;
+}
